@@ -7,7 +7,7 @@ if (Meteor.isClient) {
   // Create AngularJS module and add angular-meteor dependency
   angular.module('socially', ['angular-meteor']);
 
-  angular.module('socially').controller('PartiesListCtrl', function ($scope) {
+  angular.module('socially').controller('PartiesListCtrl', function ($scope, $meteor) {
     $scope.parties = $meteor.collection(Parties);
   });
 }
