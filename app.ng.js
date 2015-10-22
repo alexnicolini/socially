@@ -1,3 +1,6 @@
+// Define the parties collection
+Parties = new Mongo.Collection('parties');
+
 if (Meteor.isClient) {
   // This code only run on the client side
 
